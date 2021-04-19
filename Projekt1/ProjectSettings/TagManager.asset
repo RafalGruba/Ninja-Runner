@@ -13,12 +13,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Foreground
+  - Player
+  - Enemy
+  - Hazards
+  - Background
+  - Water
   - 
   - 
   - 
@@ -40,4 +40,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1275459577
+    locked: 0
+  - name: Player
+    uniqueID: 3133208259
+    locked: 0
+  - name: Enemy
+    uniqueID: 2599790925
+    locked: 0
+  - name: Hazards
+    uniqueID: 3952033069
+    locked: 0
+  - name: Background
+    uniqueID: 1828328367
+    locked: 0
+  - name: Water
+    uniqueID: 1182005657
     locked: 0
