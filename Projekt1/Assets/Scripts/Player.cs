@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     Rigidbody2D myRigidBody;
     BoxCollider2D myBodyCollider;
     PolygonCollider2D myFeet;
+    Animator myAnimator;
+    float gravityScaleAtStart;
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +23,15 @@ public class Player : MonoBehaviour
         myRigidBody = GetComponent<Rigidbody2D>();
         myBodyCollider = GetComponent<BoxCollider2D>();
         myFeet = GetComponent<PolygonCollider2D>();
+        myAnimator = GetComponent<Animator>();
+        gravityScaleAtStart = myRigidBody.gravityScale;
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        FlipSprite();
         Run();
         Jump();
     }
@@ -35,6 +41,8 @@ public class Player : MonoBehaviour
         float controlThrow = Input.GetAxis("Horizontal");
         Vector2 playerVelocity = new Vector2(controlThrow * runSpeed, myRigidBody.velocity.y);
         myRigidBody.velocity = playerVelocity;
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+        myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
     }
 
     private void Jump()
@@ -43,8 +51,20 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         { 
         Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
-        myRigidBody.velocity = jumpVelocity;
+        myRigidBody.velocity += jumpVelocity;
         }
+    }
+
+    private void FlipSprite()
+    {
+
+        bool playerHasHorizontalSpeed = Mathf.Abs(myRigidBody.velocity.x) > Mathf.Epsilon;
+        if (playerHasHorizontalSpeed)
+        {
+            myRigidBody.gravityScale = gravityScaleAtStart;
+            transform.localScale = new Vector2(Mathf.Sign(myRigidBody.velocity.x), 1f);
+        }
+
     }
 
 }
