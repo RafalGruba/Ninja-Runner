@@ -52,6 +52,7 @@ public class Player : MonoBehaviour
         { 
         Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
         myRigidBody.velocity += jumpVelocity;
+        myAnimator.SetTrigger("hasJumped");
         }
     }
 
