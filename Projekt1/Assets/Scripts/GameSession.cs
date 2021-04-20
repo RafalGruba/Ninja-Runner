@@ -26,10 +26,11 @@ public class GameSession : MonoBehaviour
     {
         if (finished == false)
         {
-            float timePassedSinceStart = Time.time - startTime;
-            string minutes = ((int)timePassedSinceStart / 60).ToString();
-            string seconds = (timePassedSinceStart % 60).ToString("f2");
-            timerText.text = minutes + "," + seconds;
+            float minutes = (int)(Time.timeSinceLevelLoad / 60f);
+            float seconds = (int)(Time.timeSinceLevelLoad % 60f);
+            float milliseconds = (int)(Time.timeSinceLevelLoad * 6f);
+
+            timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + milliseconds.ToString("00");
         }
     }
 

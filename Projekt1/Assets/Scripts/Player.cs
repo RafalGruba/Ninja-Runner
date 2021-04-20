@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
         myFeet = GetComponent<PolygonCollider2D>();
         myAnimator = GetComponent<Animator>();
         gravityScaleAtStart = myRigidBody.gravityScale;
+        myAnimator.SetTrigger("GameStarted");
 
     }
 
