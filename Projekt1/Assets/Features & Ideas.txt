@@ -1,9 +1,18 @@
 PLAYER MOVEMENT:
 -Wall jump
 -OnPressButton - the longer you press the higher you jump
+-Falling animation
+
+ENVIROMENT:
+-bouncing platforms
+-additional colliders (ropes, thin walls etc.)
+-pickups (cherries, coins, crystals etc.)
+
+ENEMIES:
+-create enemy
+-enemy that is triggered by collider field, say something, shoot something and ran away
 
 
-
-
-
+CORE GAME:
+-Time.DeltaTime
 

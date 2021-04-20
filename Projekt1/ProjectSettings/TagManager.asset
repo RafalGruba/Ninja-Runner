@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Hazards
   - Background
   - Water
-  - 
+  - Interactables
   - 
   - 
   - 
@@ -58,4 +59,7 @@ TagManager:
     locked: 0
   - name: Water
     uniqueID: 1182005657
+    locked: 0
+  - name: Interactables
+    uniqueID: 2238907747
     locked: 0
