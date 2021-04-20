@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109459208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -43.7, y: -35.124, z: -10}
+  m_LocalPosition: {x: -43.7, y: -35.11, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1187453264}
@@ -49,7 +49,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 9
+  m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -234,13 +234,13 @@ MonoBehaviour:
   - {fileID: 7543228613367649329}
   - {fileID: 109459210}
   m_Instructions:
+  - m_FullHash: -1044386772
+    m_VirtualCamera: {fileID: 109459210}
+    m_ActivateAfter: 15
+    m_MinDuration: 0
   - m_FullHash: -589304671
     m_VirtualCamera: {fileID: 7543228613367649329}
     m_ActivateAfter: 0
-    m_MinDuration: 0
-  - m_FullHash: 804956578
-    m_VirtualCamera: {fileID: 109459210}
-    m_ActivateAfter: 5
     m_MinDuration: 0
   m_DefaultBlend:
     m_Style: 1
@@ -253,11 +253,13 @@ MonoBehaviour:
       m_RotationOrder: 4
   m_CustomBlends: {fileID: 11400000, guid: bba3a18275eeef84f97357a86d7ae136, type: 2}
   m_ParentHash:
-  - m_Hash: 804956578
+  - m_Hash: -776972659
     m_ParentHash: 756556552
   - m_Hash: -589304671
     m_ParentHash: 756556552
   - m_Hash: 2114901952
+    m_ParentHash: 756556552
+  - m_Hash: -1044386772
     m_ParentHash: 756556552
 --- !u!1 &1027502669958542209
 GameObject:
@@ -372,7 +374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2425742627090029013}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -43.7, y: -35.124, z: -10}
+  m_LocalPosition: {x: 45.1, y: -33.33, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6441569152764310393}
@@ -401,7 +403,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 20
+    OrthographicSize: 27.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -457,7 +459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3062995644598448544}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -43.7, y: -35.124, z: -10}
+  m_LocalPosition: {x: -43.7, y: -35.11, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2298639723652796855}
@@ -480,7 +482,7 @@ MonoBehaviour:
   - m_Script
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
-  m_Priority: 9
+  m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
@@ -630,7 +632,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5127744096574868990}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.398823, y: -17.5, z: -10}
+  m_LocalPosition: {x: 1.1111069, y: -9.999998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6627789363435513205}
@@ -663,7 +665,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 27.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
