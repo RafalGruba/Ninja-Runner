@@ -26,11 +26,11 @@ public class GameSession : MonoBehaviour
     {
         if (finished == false)
         {
-            float minutes = (int)(Time.timeSinceLevelLoad / 60f);
-            float seconds = (int)(Time.timeSinceLevelLoad % 60f);
-            float milliseconds = (int)(Time.timeSinceLevelLoad * 6f);
+            int minutes = (int)(Time.timeSinceLevelLoad / 60f);
+            int seconds = (int)(Time.timeSinceLevelLoad % 60f);
+            int milliseconds = (int)(Time.timeSinceLevelLoad * 6f);
 
-            timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + milliseconds.ToString("00");
+            timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + milliseconds.ToString("f0");
         }
     }
 

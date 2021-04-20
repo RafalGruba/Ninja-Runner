@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         gravityScaleAtStart = myRigidBody.gravityScale;
         myAnimator.SetTrigger("GameStarted");
+        myRigidBody.velocity = new Vector2(1f, myRigidBody.velocity.y);
 
     }
 
