@@ -2,6 +2,7 @@ PLAYER MOVEMENT:
 -Wall jump
 -OnPressButton - the longer you press the higher you jump
 -Falling animation
+-Camera at start should be wider
 
 ENVIROMENT:
 -bouncing platforms
@@ -15,4 +16,11 @@ ENEMIES:
 
 CORE GAME:
 -Time.DeltaTime
+-Timer to f2 milliseconds
 
+
+UI:
+-Start Screen UI
+-Options UI
+-Level complete UI
+-Escape UI

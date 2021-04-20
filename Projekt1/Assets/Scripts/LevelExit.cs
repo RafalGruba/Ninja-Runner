@@ -8,7 +8,6 @@ public class LevelExit : MonoBehaviour
     [SerializeField] float timePassing = 0.1f;
 
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         StartCoroutine(LevelComplete());
@@ -17,6 +16,7 @@ public class LevelExit : MonoBehaviour
 
     IEnumerator LevelComplete()
     {
+        FindObjectOfType<GameSession>().Finish();
         Time.timeScale = myTimeScale;
         Debug.Log("slow-mo is set");
         yield return new WaitForSeconds(timePassing);
