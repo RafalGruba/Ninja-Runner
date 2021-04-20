@@ -1,0 +1,9 @@
+PLAYER MOVEMENT:
+-Wall jump
+-OnPressButton - the longer you press the higher you jump
+
+
+
+
+
+
