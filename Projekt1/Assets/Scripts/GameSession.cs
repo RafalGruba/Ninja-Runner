@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
     public TMP_Text timerText;
     private float startTime;
     private bool finished = false;
+    int currentSceneIndex;
 
     // Start is called before the first frame update
     void Start()
     {
         startTime = Time.time;
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     // Update is called once per frame
@@ -38,6 +41,11 @@ public class GameSession : MonoBehaviour
     {
         timerText.color = Color.yellow;
         finished = true;
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
 
