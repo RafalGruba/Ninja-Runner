@@ -7,15 +7,21 @@ using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
+    // Time vars
     public TMP_Text timerText;
     private float startTime;
+    public int countdownTime = 3;
+    public TMP_Text countdownDisplay;
     private bool finished = false;
+    private bool cdFinished = false;
+
+    //Scene vars
     int currentSceneIndex;
 
-    // Start is called before the first frame update
+
     void Start()
     {
-        startTime = Time.time;
+        StartCoroutine(CountdownToStart());
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
@@ -27,13 +33,16 @@ public class GameSession : MonoBehaviour
 
     public void Timer()
     {
-        if (finished == false)
+        if (cdFinished)
         {
-            int minutes = (int)(Time.timeSinceLevelLoad / 60f);
-            int seconds = (int)(Time.timeSinceLevelLoad % 60f);
-            int milliseconds = (int)(Time.timeSinceLevelLoad * 6f);
+            if (finished == false)
+            {
+                float t = Time.time - startTime;
+                string minutes = ((int)t / 60).ToString();
+                string seconds = (t % 60).ToString("f2");
+                timerText.text = minutes + ":" + seconds;
+            }
 
-            timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00") + ":" + milliseconds.ToString("f0");
         }
     }
 
@@ -48,5 +57,25 @@ public class GameSession : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    IEnumerator CountdownToStart()
+    {
+        while (countdownTime > 0)
+        {
+            countdownDisplay.text = countdownTime.ToString();
+            yield return new WaitForSeconds(1f);
+            countdownTime--;
+        }
+        countdownDisplay.text = "GO!";
+        yield return new WaitForSeconds(1f);
+        cdFinished = true;
+        startTime = Time.time;
+        FindObjectOfType<Player>().CdFinished(); 
+        countdownDisplay.gameObject.SetActive(false);
+    }
 
 }

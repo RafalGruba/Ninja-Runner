@@ -1,13 +1,16 @@
 PLAYER MOVEMENT:
 -Wall jump
--OnPressButton - the longer you press the higher you jump
--Falling animation
--Camera at start should be wider
+-double jump
+-GetButton instead of GetButtonDown - this gives better game experience - done
+-Falling animation - to be considered
+-Camera at start should be wider- done
 
 ENVIROMENT:
 -bouncing platforms
 -additional colliders (ropes, thin walls etc.)
 -pickups (cherries, coins, crystals etc.)
+-teleports - done
+-interactables obstacles
 
 ENEMIES:
 -create enemy
@@ -15,12 +18,13 @@ ENEMIES:
 
 
 CORE GAME:
--Time.DeltaTime
+-Time.DeltaTime - fixed (instead of Time.Deltatime i've moved methods that are using Unity physics to FixedUpdate())
 -Timer to f2 milliseconds
+-3,2,1 countdown when level starts
 
 
 UI:
 -Start Screen UI
--Options UI
+-Options UI (volume, )
 -Level complete UI
 -Escape UI

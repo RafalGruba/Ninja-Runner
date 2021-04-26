@@ -158,10 +158,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.4500745, y: -1.0898976}
-      - {x: 0.50704163, y: -1.0909896}
-      - {x: 0.5070417, y: -0.98247725}
-      - {x: -0.44942224, y: -0.9825116}
+    - - {x: -0.40323383, y: -0.9649854}
+      - {x: 0.43938035, y: -0.96087027}
+      - {x: 0.42896628, y: -0.8471547}
+      - {x: 0.26800537, y: -0.8367653}
+      - {x: -0.4181913, y: -0.8471852}
 --- !u!95 &7304343424275012492
 Animator:
   serializedVersion: 3
@@ -194,4 +195,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 25
-  jumpSpeed: 25
+  jumpSpeed: 12
+  cdFinished: 0

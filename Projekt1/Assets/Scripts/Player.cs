@@ -5,8 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // config
-    [SerializeField] float runSpeed = 5f;
-    [SerializeField] float jumpSpeed = 5f;
+    [SerializeField] float runSpeed = 25f;
+    [SerializeField] float jumpSpeed = 25f;
 
     // states
 
@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     PolygonCollider2D myFeet;
     Animator myAnimator;
     float gravityScaleAtStart;
+    public bool cdFinished = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +27,7 @@ public class Player : MonoBehaviour
         myAnimator = GetComponent<Animator>();
         gravityScaleAtStart = myRigidBody.gravityScale;
         myAnimator.SetTrigger("GameStarted");
-        myRigidBody.velocity = new Vector2(1f, myRigidBody.velocity.y);
+        myRigidBody.velocity = new Vector2(0f, myRigidBody.velocity.y);
 
     }
 
@@ -34,8 +35,15 @@ public class Player : MonoBehaviour
     void Update()
     {
         FlipSprite();
-        Run();
-        Jump();
+    }
+
+    private void FixedUpdate()
+    {
+        if(cdFinished)
+        {
+            Run();
+            Jump();
+        }
     }
 
     private void Run()
@@ -50,11 +58,11 @@ public class Player : MonoBehaviour
     private void Jump()
     {
         if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Foreground"))) { return; }
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButton("Jump"))
         { 
-        Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
-        myRigidBody.velocity += jumpVelocity;
-        myAnimator.SetTrigger("hasJumped");
+            Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
+            myRigidBody.velocity += jumpVelocity;
+            myAnimator.SetTrigger("hasJumped");
         }
     }
 
@@ -68,6 +76,10 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Sign(myRigidBody.velocity.x), 1f);
         }
 
+    }
+    public void CdFinished()
+    {
+        cdFinished = true;
     }
 
 }
