@@ -8,7 +8,7 @@ PLAYER MOVEMENT:
 ENVIROMENT:
 -bouncing platforms
 -additional colliders (ropes, thin walls etc.)
--pickups (cherries, coins, crystals etc.)
+-pickups (cherries, shrooms, coins, crystals etc.)
 -teleports - done
 -interactables obstacles
 
@@ -28,3 +28,8 @@ UI:
 -Options UI (volume, )
 -Level complete UI
 -Escape UI
+
+
+Game title ideas:
+NINJA RUNNER
+Crystal Path

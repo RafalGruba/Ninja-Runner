@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour
 {
@@ -15,14 +14,11 @@ public class GameSession : MonoBehaviour
     private bool finished = false;
     private bool cdFinished = false;
 
-    //Scene vars
-    int currentSceneIndex;
 
 
     void Start()
     {
         StartCoroutine(CountdownToStart());
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
 
     // Update is called once per frame
@@ -50,16 +46,6 @@ public class GameSession : MonoBehaviour
     {
         timerText.color = Color.yellow;
         finished = true;
-    }
-
-    public void LoadNextScene()
-    {
-        SceneManager.LoadScene(currentSceneIndex + 1);
-    }
-
-    public void QuitGame()
-    {
-        Application.Quit();
     }
 
     IEnumerator CountdownToStart()
