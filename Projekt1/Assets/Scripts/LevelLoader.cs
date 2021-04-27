@@ -29,6 +29,7 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
     }
 
