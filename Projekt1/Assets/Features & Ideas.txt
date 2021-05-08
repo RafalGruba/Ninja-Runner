@@ -33,3 +33,6 @@ UI:
 Game title ideas:
 NINJA RUNNER
 Crystal Path
+
+Game idea's:
+-scenariusz gry w stylu filmu "to właśnie życie"
