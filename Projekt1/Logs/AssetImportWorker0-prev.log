@@ -15,13 +15,21 @@ C:/Users/PC/Documents/GitHub/Projekt1/Projekt1
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 57980
+=======
+58514
+>>>>>>> parent of a470f96 (totally wasted day)
 Successfully changed project path to: C:/Users/PC/Documents/GitHub/Projekt1/Projekt1
 C:/Users/PC/Documents/GitHub/Projekt1/Projekt1
 Using Asset Import Pipeline V2.
 Default GameObject BitMask: Water already registered
 
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 51.61 ms, found 1 plugins.
+=======
+Refreshing native plugins compatible for Editor in 46.82 ms, found 1 plugins.
+>>>>>>> parent of a470f96 (totally wasted day)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.7f1 (dd97f2c94397)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Resources/UnitySubsystems
@@ -37,6 +45,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -56,11 +65,33 @@ Refreshing native plugins compatible for Editor in 49.82 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.059 seconds
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002498 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 46.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.241 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001170 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 70.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.173 seconds
+>>>>>>> parent of a470f96 (totally wasted day)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Default GameObject BitMask: Water already registered
 
+<<<<<<< HEAD
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
@@ -121,18 +152,81 @@ System memory in use after: 92.4 MB.
 
 Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2489.
 Total: 2.600200 ms (FindLiveObjects: 0.250600 ms CreateObjectMapping: 0.065300 ms MarkObjects: 2.260400 ms  DeleteObjects: 0.022500 ms)
+=======
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2033 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 94.2 MB.
+System memory in use after: 94.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2480.
+Total: 3.240600 ms (FindLiveObjects: 0.243700 ms CreateObjectMapping: 0.049400 ms MarkObjects: 2.857000 ms  DeleteObjects: 0.089200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/CM StateDrivenCamera1 Blends.asset
+  artifactKey: Guid(bba3a18275eeef84f97357a86d7ae136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CM StateDrivenCamera1 Blends.asset using Guid(bba3a18275eeef84f97357a86d7ae136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c051ed9d596e2fec95537ad00caf1451') in 0.032537 seconds
+  Import took 0.036095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/MainAudioMixer.mixer
+  artifactKey: Guid(2cc9f4fcec4b3854ea85639fb4727161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MainAudioMixer.mixer using Guid(2cc9f4fcec4b3854ea85639fb4727161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf1b569f1048b6b912fd536e489e521') in 0.010689 seconds
+  Import took 0.013942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.450904 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(f958a1c26ef3f79429357b67b2a41321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 1.unity using Guid(f958a1c26ef3f79429357b67b2a41321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da24c4a829d98deed3509fb8e5ba1a3a') in 0.008072 seconds
+  Import took 0.011346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008780 seconds.
+  path: Assets/Scenes/Level 1.unity
+  artifactKey: Guid(f958a1c26ef3f79429357b67b2a41321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level 1.unity using Guid(f958a1c26ef3f79429357b67b2a41321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da24c4a829d98deed3509fb8e5ba1a3a') in 0.003625 seconds
+  Import took 0.007542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.126701 seconds.
+  path: Assets/Scenes/Main Menu.unity
+  artifactKey: Guid(56fa1b04cd3ad0343a1ad14e51872866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Menu.unity using Guid(56fa1b04cd3ad0343a1ad14e51872866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41ebd1c8e0e0046fa127dfb4edc2b38a') in 0.009268 seconds
+  Import took 0.012422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.971309 seconds.
+  path: Assets/Scenes/Options Menu.unity
+  artifactKey: Guid(dac7ab8409f393d4db36b4b67c6c8692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Options Menu.unity using Guid(dac7ab8409f393d4db36b4b67c6c8692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '475c4f9e60a2897a57641b80c5f4fdf3') in 0.009111 seconds
+  Import took 0.012332 seconds .
+>>>>>>> parent of a470f96 (totally wasted day)
 
 ========================================================================
 Received Prepare
 Default GameObject BitMask: Water already registered
 
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.001178 seconds.
+=======
+Registered in 0.001157 seconds.
+>>>>>>> parent of a470f96 (totally wasted day)
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Completed reload, in  0.974 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
@@ -151,12 +245,25 @@ Received Import Request.
   artifactKey: Guid(bf26f39ffba17654abe9c3309ff28841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Animations/Player/Player.controller using Guid(bf26f39ffba17654abe9c3309ff28841) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ef31876adc40bc2491c6b6b59cc797') in 0.032942 seconds
   Import took 0.037125 seconds .
+=======
+- Completed reload, in  1.015 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.2 MB.
+System memory in use after: 92.3 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2484.
+Total: 2.432600 ms (FindLiveObjects: 0.257100 ms CreateObjectMapping: 0.049100 ms MarkObjects: 2.107100 ms  DeleteObjects: 0.017500 ms)
+>>>>>>> parent of a470f96 (totally wasted day)
 
 ========================================================================
 Received Prepare
 Default GameObject BitMask: Water already registered
 
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.001232 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -164,36 +271,69 @@ Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  0.961 seconds
+=======
+Registered in 0.001326 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.917 seconds
+>>>>>>> parent of a470f96 (totally wasted day)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
+<<<<<<< HEAD
 System memory in use before: 92.3 MB.
 System memory in use after: 92.4 MB.
 
 Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2497.
 Total: 2.332600 ms (FindLiveObjects: 0.295800 ms CreateObjectMapping: 0.049800 ms MarkObjects: 1.968900 ms  DeleteObjects: 0.016500 ms)
+=======
+System memory in use before: 92.2 MB.
+System memory in use after: 92.3 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2488.
+Total: 2.098300 ms (FindLiveObjects: 0.230600 ms CreateObjectMapping: 0.047800 ms MarkObjects: 1.794700 ms  DeleteObjects: 0.023600 ms)
+>>>>>>> parent of a470f96 (totally wasted day)
 
 ========================================================================
 Received Prepare
 Default GameObject BitMask: Water already registered
 
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.001231 seconds.
+=======
+Registered in 0.001258 seconds.
+>>>>>>> parent of a470f96 (totally wasted day)
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 - Completed reload, in  0.937 seconds
+=======
+- Completed reload, in  0.922 seconds
+>>>>>>> parent of a470f96 (totally wasted day)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
+<<<<<<< HEAD
 System memory in use before: 92.3 MB.
 System memory in use after: 92.5 MB.
 
 Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2501.
 Total: 2.530700 ms (FindLiveObjects: 0.282100 ms CreateObjectMapping: 0.064800 ms MarkObjects: 2.164400 ms  DeleteObjects: 0.018300 ms)
+=======
+System memory in use before: 92.2 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2492.
+Total: 2.022600 ms (FindLiveObjects: 0.235600 ms CreateObjectMapping: 0.047000 ms MarkObjects: 1.722200 ms  DeleteObjects: 0.016400 ms)
+>>>>>>> parent of a470f96 (totally wasted day)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
