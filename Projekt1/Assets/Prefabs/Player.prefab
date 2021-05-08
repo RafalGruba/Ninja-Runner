@@ -51,7 +51,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -159,8 +158,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.2488454, y: -0.93349504}
-      - {x: 0.30805558, y: -0.9352851}
+    - - {x: -0.40323383, y: -0.9649854}
+      - {x: 0.43938035, y: -0.96087027}
       - {x: 0.42896628, y: -0.8471547}
       - {x: 0.26800537, y: -0.8367653}
       - {x: -0.4181913, y: -0.8471852}
@@ -195,6 +194,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69037220f6f103549b8ac9d1037be959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 24
-  jumpSpeed: 24
-  cdFinished: 1
+  runSpeed: 25
+  jumpSpeed: 12
+  cdFinished: 0

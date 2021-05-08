@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpSpeed = 25f;
 
     // states
-    bool isInTheAir;
 
     // Cached component references
     Rigidbody2D myRigidBody;
@@ -58,17 +57,12 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (myFeet.IsTouchingLayers(LayerMask.GetMask("Foreground"))) 
-        {
-            isInTheAir = false;
-        }
-        if (Input.GetButton("Jump") && (isInTheAir == false))
-        {
-            isInTheAir = true;
+        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Foreground"))) { return; }
+        if (Input.GetButton("Jump"))
+        { 
             Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocity;
             myAnimator.SetTrigger("hasJumped");
-            Debug.Log("I pressed SPACE button only once");
         }
     }
 
