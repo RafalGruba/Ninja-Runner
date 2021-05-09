@@ -285,15 +285,85 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 350
       objectReference: {fileID: 0}
+    - target: {fileID: 1603753774260629980, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4059607275081924027}
+    - target: {fileID: 1603753774260629980, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1603753774260629980, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1805486830393361733, guid: eae48d04b855af6428aabdafae1f9584,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 4059607275081924027}
+    - target: {fileID: 1805486830393361733, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805486830393361733, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521071813485568073, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4059607275081924027}
+    - target: {fileID: 3521071813485568073, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3521071813485568073, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5701536658614415224, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4059607275081924027}
+    - target: {fileID: 5701536658614415224, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5701536658614415224, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelLoader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5951792166949973612, guid: eae48d04b855af6428aabdafae1f9584,
         type: 3}
       propertyPath: m_Name
       value: LevelSelectionMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297788338751847438, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4059607275081924027}
+    - target: {fileID: 6297788338751847438, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6297788338751847438, guid: eae48d04b855af6428aabdafae1f9584,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelLoader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6941787538509267439, guid: eae48d04b855af6428aabdafae1f9584,
         type: 3}
@@ -303,7 +373,7 @@ PrefabInstance:
     - target: {fileID: 6941787538509267439, guid: eae48d04b855af6428aabdafae1f9584,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadNextScene
+      value: LoadLevel1
       objectReference: {fileID: 0}
     - target: {fileID: 6941787538509267439, guid: eae48d04b855af6428aabdafae1f9584,
         type: 3}
