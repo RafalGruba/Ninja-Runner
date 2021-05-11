@@ -34076,15 +34076,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Colider Background
       objectReference: {fileID: 0}
+    - target: {fileID: 7315586215329118298, guid: 4f17e92e907a3e84bb64dff3db9d0de2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7315586215329118299, guid: 4f17e92e907a3e84bb64dff3db9d0de2,
         type: 3}
       propertyPath: m_Sprite
       value: 
+      objectReference: {fileID: 21300000, guid: bd1b6ce4b39147a45953a743f1f7714f,
+        type: 3}
+    - target: {fileID: 7315586215329118299, guid: 4f17e92e907a3e84bb64dff3db9d0de2,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7315586215329118299, guid: 4f17e92e907a3e84bb64dff3db9d0de2,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7315586215329118299, guid: 4f17e92e907a3e84bb64dff3db9d0de2,
         type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f17e92e907a3e84bb64dff3db9d0de2, type: 3}
@@ -34364,6 +34380,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1686994371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7315586215329118298, guid: 4f17e92e907a3e84bb64dff3db9d0de2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1456419710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &1686994372
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686994371}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 7.5}
+    newSize: {x: 10, y: 7.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -5, y: 3.75}
+      - {x: -5, y: -3.75}
+      - {x: 5, y: -3.75}
+      - {x: 5, y: 3.75}
 --- !u!4 &1712539860 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7730562086443553609, guid: b9397a3e9d9d8a14d96bfe9360f08598,
@@ -34922,11 +34973,11 @@ PrefabInstance:
     - target: {fileID: 109459211, guid: 1bccbabcf51e9d147aa6618309be48e1, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1686994372}
     - target: {fileID: 950114678, guid: 1bccbabcf51e9d147aa6618309be48e1, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1686994372}
     - target: {fileID: 964243169, guid: 1bccbabcf51e9d147aa6618309be48e1, type: 3}
       propertyPath: m_UnlimitedSoftZone
       value: 0
@@ -34974,12 +35025,12 @@ PrefabInstance:
     - target: {fileID: 5127744096574868989, guid: 1bccbabcf51e9d147aa6618309be48e1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.03
+      value: -1.0807762
       objectReference: {fileID: 0}
     - target: {fileID: 5127744096574868989, guid: 1bccbabcf51e9d147aa6618309be48e1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -34.87
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6627789363435513205, guid: 1bccbabcf51e9d147aa6618309be48e1,
         type: 3}
@@ -35060,7 +35111,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BoundingShape2D
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1686994372}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bccbabcf51e9d147aa6618309be48e1, type: 3}
 --- !u!1001 &7304343424311196496

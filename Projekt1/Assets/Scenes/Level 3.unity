@@ -38901,8 +38901,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I can't help you, I have lost my powers. Bring my relics and I will help
-    you move the stone.
+  m_text: I can't help you, I have lost my powers. Find my relics and I will move
+    the stone for you.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -39764,11 +39764,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 109459209, guid: 1bccbabcf51e9d147aa6618309be48e1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.9
+      value: 33.1
       objectReference: {fileID: 0}
     - target: {fileID: 109459209, guid: 1bccbabcf51e9d147aa6618309be48e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4
+      value: 3.1
       objectReference: {fileID: 0}
     - target: {fileID: 109459210, guid: 1bccbabcf51e9d147aa6618309be48e1, type: 3}
       propertyPath: m_Follow
