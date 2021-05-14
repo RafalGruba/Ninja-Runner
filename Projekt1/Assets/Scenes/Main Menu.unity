@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 976a89e6bff19544084f1a922e5be825,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +119,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -289,6 +292,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6828007041079985748, guid: 9fa582c43794ee0438a5efc916430ba3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -74
+      objectReference: {fileID: 0}
     - target: {fileID: 6828007041079985749, guid: 9fa582c43794ee0438a5efc916430ba3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -308,6 +316,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828007041172049591, guid: 9fa582c43794ee0438a5efc916430ba3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -224
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828007041385245444, guid: 9fa582c43794ee0438a5efc916430ba3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 76.00001
       objectReference: {fileID: 0}
     - target: {fileID: 6828007041385245445, guid: 9fa582c43794ee0438a5efc916430ba3,
         type: 3}
@@ -378,6 +396,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MenuSession
+      objectReference: {fileID: 0}
+    - target: {fileID: 6828007042151569863, guid: 9fa582c43794ee0438a5efc916430ba3,
+        type: 3}
+      propertyPath: m_text
+      value: Ninja Runner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fa582c43794ee0438a5efc916430ba3, type: 3}

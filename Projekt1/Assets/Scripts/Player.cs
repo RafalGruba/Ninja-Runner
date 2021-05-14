@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float jumpSpeed = 25f;
 
     // states
+    bool isInTheAir;
 
     // Cached component references
     Rigidbody2D myRigidBody;
@@ -18,7 +19,6 @@ public class Player : MonoBehaviour
     float gravityScaleAtStart;
     public bool cdFinished = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         FlipSprite();
@@ -55,14 +55,35 @@ public class Player : MonoBehaviour
         myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Equals ("Platform"))
+        {
+            this.transform.parent = collision.transform;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Equals ("Platform"))
+        {
+            this.transform.parent = null;
+        }
+    }
+
+
     private void Jump()
     {
-        if (!myFeet.IsTouchingLayers(LayerMask.GetMask("Foreground"))) { return; }
-        if (Input.GetButton("Jump"))
-        { 
+        if (myFeet.IsTouchingLayers(LayerMask.GetMask("Foreground")) || myFeet.IsTouchingLayers(LayerMask.GetMask("Platform"))) 
+        {
+            isInTheAir = false;
+        }
+        if (Input.GetButton("Jump") && (isInTheAir == false))
+        {
+            isInTheAir = true;
             Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocity;
             myAnimator.SetTrigger("hasJumped");
+            Debug.Log("I've pressed SPACE button only once");
         }
     }
 
