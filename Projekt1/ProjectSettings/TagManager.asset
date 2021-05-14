@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -13,15 +14,15 @@ TagManager:
   - Water
   - UI
   - 
-  - 
+  - Water
   - Foreground
   - Player
   - Enemy
   - Hazards
   - Background
-  - Water
+  - Collider
   - Interactables
-  - 
+  - Platform
   - 
   - 
   - 
@@ -44,6 +45,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1828328367
+    locked: 0
+  - name: Platforms
+    uniqueID: 1403059467
     locked: 0
   - name: Foreground
     uniqueID: 1275459577

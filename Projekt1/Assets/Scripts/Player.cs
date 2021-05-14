@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
     float gravityScaleAtStart;
     public bool cdFinished = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -32,7 +31,7 @@ public class Player : MonoBehaviour
 
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         FlipSprite();
@@ -56,9 +55,25 @@ public class Player : MonoBehaviour
         myAnimator.SetBool("isRunning", playerHasHorizontalSpeed);
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Equals ("Platform"))
+        {
+            this.transform.parent = collision.transform;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.name.Equals ("Platform"))
+        {
+            this.transform.parent = null;
+        }
+    }
+
+
     private void Jump()
     {
-        if (myFeet.IsTouchingLayers(LayerMask.GetMask("Foreground"))) 
+        if (myFeet.IsTouchingLayers(LayerMask.GetMask("Foreground")) || myFeet.IsTouchingLayers(LayerMask.GetMask("Platform"))) 
         {
             isInTheAir = false;
         }
@@ -68,7 +83,7 @@ public class Player : MonoBehaviour
             Vector2 jumpVelocity = new Vector2(0f, jumpSpeed);
             myRigidBody.velocity += jumpVelocity;
             myAnimator.SetTrigger("hasJumped");
-            Debug.Log("I pressed SPACE button only once");
+            Debug.Log("I've pressed SPACE button only once");
         }
     }
 

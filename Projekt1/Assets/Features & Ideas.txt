@@ -11,6 +11,9 @@ ENVIROMENT:
 -pickups (cherries, shrooms, coins, crystals etc.)
 -teleports - done
 -interactables obstacles
+5 dźwigni - jeśli ułozy się 5 dźwigni w odpowiedni sposób drzwi się otworzą
+ruchome platformy
+ruchome pionowe ściany
 
 ENEMIES:
 -create enemy
