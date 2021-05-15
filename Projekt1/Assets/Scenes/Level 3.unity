@@ -40342,7 +40342,7 @@ PrefabInstance:
     - target: {fileID: 7304343424275012489, guid: ec669cdf8b246cd43a9e33e4ea723b8d,
         type: 3}
       propertyPath: cdFinished
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7304343424275012491, guid: ec669cdf8b246cd43a9e33e4ea723b8d,
         type: 3}
