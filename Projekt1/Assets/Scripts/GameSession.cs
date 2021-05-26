@@ -8,6 +8,7 @@ public class GameSession : MonoBehaviour
 {
     // Time vars
     public TMP_Text timerText;
+    public TMP_Text timerTextEndLevel;
     private float startTime;
     public int countdownTime = 3;
     public TMP_Text countdownDisplay;
@@ -44,8 +45,9 @@ public class GameSession : MonoBehaviour
 
     public void Finish()
     {
-        timerText.color = Color.yellow;
         finished = true;
+        timerTextEndLevel.color = Color.yellow;
+        timerTextEndLevel.text = timerText.text;
     }
 
     IEnumerator CountdownToStart()

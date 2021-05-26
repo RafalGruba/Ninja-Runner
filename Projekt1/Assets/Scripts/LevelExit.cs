@@ -20,7 +20,6 @@ public class LevelExit : MonoBehaviour
     {
         FindObjectOfType<GameSession>().Finish();
         Time.timeScale = myTimeScale;
-        Debug.Log("slow-mo is set");
         yield return new WaitForSeconds(timePassing);
         Time.timeScale = 0f;
         endLevelUI.SetActive(true);
