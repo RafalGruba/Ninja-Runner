@@ -14,6 +14,7 @@ public class LevelLoader : MonoBehaviour
     }
     public void LoadNextScene()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
@@ -35,7 +36,6 @@ public class LevelLoader : MonoBehaviour
     public void LoadLevel1()
     {
         SceneManager.LoadScene("Level 1");
-
     }
 
     public void LoadLevel2()
@@ -46,17 +46,15 @@ public class LevelLoader : MonoBehaviour
     public void LoadLevel3()
     {
         SceneManager.LoadScene("Level 3");
-
     }
-    public void LoadLevel4()
+    public void LoadCreditsScene()
     {
-        SceneManager.LoadScene("Level 4");
-
+        SceneManager.LoadScene("Credits Scene");
     }
-    public void LoadLevel5()
+    public void RestartLevel()
     {
-        SceneManager.LoadScene("Level 5");
-
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
 }

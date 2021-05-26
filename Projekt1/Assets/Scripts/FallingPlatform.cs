@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FallingPlatform : MonoBehaviour
 {
-    [SerializeField] float pushPower = 15f;
     bool plaformTouched = false;
     Rigidbody2D rb;
     public GameObject particleEffect;
