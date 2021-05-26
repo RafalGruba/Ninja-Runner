@@ -13,6 +13,7 @@ public class Relics : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        SfxManager.sfxInstance.audioSource.PlayOneShot(SfxManager.sfxInstance.pickedUpSomething);
         smm.AddToRelics();
         Destroy(gameObject);
     }

@@ -396,7 +396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09242a6799f7349459126a6cdf966f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushPower: 10
   particleEffect: {fileID: 3842245370996145627, guid: 0dac5317e1bce404d82a7809a5f1ca02,
     type: 3}
 --- !u!50 &71555603
@@ -823,7 +822,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09242a6799f7349459126a6cdf966f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushPower: 10
   particleEffect: {fileID: 3842245370996145627, guid: 0dac5317e1bce404d82a7809a5f1ca02,
     type: 3}
 --- !u!50 &135652517
@@ -2596,7 +2594,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09242a6799f7349459126a6cdf966f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushPower: 10
   particleEffect: {fileID: 3842245370996145627, guid: 0dac5317e1bce404d82a7809a5f1ca02,
     type: 3}
 --- !u!50 &622199287
@@ -31683,7 +31680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09242a6799f7349459126a6cdf966f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushPower: 10
   particleEffect: {fileID: 3842245370996145627, guid: 0dac5317e1bce404d82a7809a5f1ca02,
     type: 3}
 --- !u!50 &1287889038
@@ -38674,7 +38670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09242a6799f7349459126a6cdf966f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushPower: 10
   particleEffect: {fileID: 3842245370996145627, guid: 0dac5317e1bce404d82a7809a5f1ca02,
     type: 3}
 --- !u!50 &2042475762
@@ -38859,7 +38854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109459209, guid: 1bccbabcf51e9d147aa6618309be48e1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.1
+      value: -9.9
       objectReference: {fileID: 0}
     - target: {fileID: 109459210, guid: 1bccbabcf51e9d147aa6618309be48e1, type: 3}
       propertyPath: m_Follow
@@ -38889,7 +38884,7 @@ PrefabInstance:
     - target: {fileID: 646324321582083587, guid: 1bccbabcf51e9d147aa6618309be48e1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.2
+      value: -9.9
       objectReference: {fileID: 0}
     - target: {fileID: 2907654242536957689, guid: 1bccbabcf51e9d147aa6618309be48e1,
         type: 3}
@@ -39263,6 +39258,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3344543689750757356, guid: c12e554028723fe408e662641b2d2abd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4040857415684267769, guid: c12e554028723fe408e662641b2d2abd,
         type: 3}
       propertyPath: m_RootOrder

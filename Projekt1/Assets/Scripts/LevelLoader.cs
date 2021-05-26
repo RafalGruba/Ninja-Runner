@@ -33,6 +33,12 @@ public class LevelLoader : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
     }
+
+    public void LoadTutorialLevel()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Tutorial");
+    }
     public void LoadLevel1()
     {
         SceneManager.LoadScene("Level 1");

@@ -8,6 +8,7 @@ public class Key : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        SfxManager.sfxInstance.audioSource.PlayOneShot(SfxManager.sfxInstance.pickedUpSomething);
         Destroy(woodenCrate);
         Destroy(gameObject);
     }

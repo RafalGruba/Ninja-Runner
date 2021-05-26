@@ -28,6 +28,7 @@ public class FallingPlatform : MonoBehaviour
 
     IEnumerator TriggerPlatformFall()
     {
+        SfxManager.sfxInstance.audioSource.PlayOneShot(SfxManager.sfxInstance.platformIsAboutToFall);
         GameObject sand = Instantiate(particleEffect);
         sand.transform.position = gameObject.transform.position;
         Destroy(sand, 3);

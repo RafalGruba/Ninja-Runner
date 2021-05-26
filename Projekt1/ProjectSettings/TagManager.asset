@@ -14,7 +14,7 @@ TagManager:
   - Water
   - UI
   - 
-  - Water
+  - Waterr
   - Foreground
   - Player
   - Enemy
@@ -61,7 +61,7 @@ TagManager:
   - name: Player
     uniqueID: 3133208259
     locked: 0
-  - name: Water
+  - name: Waterr
     uniqueID: 1182005657
     locked: 0
   - name: Interactables

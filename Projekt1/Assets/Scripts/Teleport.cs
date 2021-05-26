@@ -10,6 +10,7 @@ public class Teleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        SfxManager.sfxInstance.audioSource.PlayOneShot(SfxManager.sfxInstance.tpUsed);
         player.transform.position = teleportOut.transform.position;
     }
 }
