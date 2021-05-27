@@ -617,7 +617,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Game Designer\r\nRafa\u0142 Gruba\r\n\r\nProgrammer\r\nRafa\u0142 Gruba\r\n\r\nArt\r\nZuhria
     Alfitra from GameArt2D.com\r\nRafa\u0142 Gruba\r\n\r\nOriginal Music by\r\nPiotr
-    \"Enhap\" Barcik\r\n\r\nSound SFX\r\nPiotr \"Enhap\" Barcik"
+    \"Enhap\" Barcik\r\n\r\nSound SFX\r\nmixkit.co"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

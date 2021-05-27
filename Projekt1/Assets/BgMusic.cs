@@ -1,9 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BgMusic : MonoBehaviour
 {
+    Scene scene;
+    public AudioSource audioSource;
+    public AudioClip mainMenuTheme;
+    public AudioClip forestTheme;
+    public AudioClip desertTheme;
+    public AudioClip cemeteryTheme;
+
     public static BgMusic bgInstance;
 
     private void Awake()
@@ -14,9 +22,10 @@ public class BgMusic : MonoBehaviour
             return;
         }
 
-        bgInstance = this;
+        bgInstance = this;       
         DontDestroyOnLoad(this);
     }
+
 
 
 }

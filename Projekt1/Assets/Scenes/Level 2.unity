@@ -39258,10 +39258,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 294825886, guid: c12e554028723fe408e662641b2d2abd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 294825886, guid: c12e554028723fe408e662641b2d2abd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 462315122, guid: c12e554028723fe408e662641b2d2abd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadLevel3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100027779727967479, guid: c12e554028723fe408e662641b2d2abd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenuFromLevels
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100027779727967479, guid: c12e554028723fe408e662641b2d2abd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3344543689750757356, guid: c12e554028723fe408e662641b2d2abd,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739190966166661414, guid: c12e554028723fe408e662641b2d2abd,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3739190966166661414, guid: c12e554028723fe408e662641b2d2abd,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 4040857415684267769, guid: c12e554028723fe408e662641b2d2abd,
         type: 3}
@@ -39317,6 +39349,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918214170443461987, guid: c12e554028723fe408e662641b2d2abd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMainMenuFromLevels
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918214170443461987, guid: c12e554028723fe408e662641b2d2abd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LevelLoader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7580716520615248830, guid: c12e554028723fe408e662641b2d2abd,
         type: 3}
